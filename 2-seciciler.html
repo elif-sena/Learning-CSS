@@ -1,0 +1,71 @@
+<!--
+    SEÇİCİLER
+    *                 : Her şey seçilecek
+    p                 : p tagı seçilecek
+    #id               : id değeri id olan seçilecek
+    .class            : class değeri .class olan seçilecek
+    h1.egik           : class değeri .egik olan h1 etiketleri seçilecek
+    p strong          : p tagı içindeki tüm strong tag'ları seçilecek, etiket içindeki etiketlere css uygulanabilir.
+    nav #button       : nav tag'ı içinde id degeri #button tüm elemanlar seçilecek
+    h1,h2,h3,h4,h5,h6 : h1-h6 arası tüm tag'lar seçilecek
+
+    id > class        (id öncelikli)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEÇİCİLER</title>
+
+    <style>
+        *{
+            color: blueviolet;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        #baslik3 {
+            color: aqua;
+        }
+
+        .baslik4 {
+            color: chocolate;
+        }
+
+        p u {
+            color: black;
+        }
+
+        p #blue_and_italic {
+            color: blue;
+            font-style: italic;
+        }
+
+        h5.egik {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BASLIK 1</h1>
+    <p>Lorem ipsum dolor sit, amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <h2>BASLIK 2</h2>
+
+    <h3 id="baslik3">BASLIK 3</h3>
+
+    <h4 class="baslik4">BASLIK 4</h4>
+    <p><u>Lorem ipsum</u> dolor sit amet consectetur adipisicing elit. Itaque, pariatur.</p>
+
+    <h5 class="egik">BASLIK 5</h5>
+    <p>Lorem ipsum <span id="blue_and_italic">dolor</span> sit amet.</p>
+</body>
+
+</html>

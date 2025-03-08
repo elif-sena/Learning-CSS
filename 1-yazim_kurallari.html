@@ -1,0 +1,68 @@
+<!--
+    - CSS'te yorum satırı   /*.........*/   için kullanılır.
+    - Bir CSS kodu yazarken farklı alternatifler mevcuttur.
+
+    1.Bir Etikete CSS kodu uygulamak, böylelikle bu etiketin kullanıldığı her yere aşağıdaki CSS kodu uygulanır.
+    h1 {
+        color: blue;
+        font-size: 16px;
+    }
+
+    2.Gruplama Yöntemi, gruptaki tüm etiketlere CSS kodu uygulanır
+    h1, h2, p {
+        color: red;
+        font-size: 32px;
+    }
+
+    3.id Yöntemi, sadece bu id'ye sahipt etiketlere CSS kodlarını uygular
+    #id {
+        color: gray;
+        font-size: 8px;
+    }
+
+    4.class Yöntemi, CSS kodlarını birden fazla etiketlere kullanmak istersek CSS kodlarına bir isim verip kullanılır
+    .CSS_ismi {
+        CSS kodları
+    }
+-->
+
+<!--
+    CSS kodları nereye yazılır?
+    - html etiketi içerisine (inline)
+    - Sayfanın head bölümüne (internal)     <style></style>     etiketleri arasına
+
+    - Bir dosyaya (external)
+        - CSS kodları metin tabanlı bir dosyaya yazılır ve diğer sayfalara link ile bağlanır.
+        <link rel="stylesheet" href="stil.css" type="text/css">
+
+    -HTML komutuna yakın olan CSS kodu önceliklidir, yani çalışma önceliği 1 > 2 > 3
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p {
+            color: brown;
+            font-size: 16px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="1-stil.css">
+</head>
+
+<body>
+    <h1 style="color: blueviolet;">ANABASLIK</h1>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    <h2>H2 BASLIK</h2>
+</body>
+
+</html>
